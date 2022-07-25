@@ -4,7 +4,10 @@ function Button(props) {
     function clickedButton() {
         //props.setPageState = props.text
         //console.log(props.text)
-        console.log("before button click " + props.state)
+        console.log("before button click " + props.state);
+        props.setState(props.text);
+        console.log("after button click " + props.state);
+
     }
     return(
         <button type="button" class="btn btn-primary col-5" onClick={clickedButton}>{props.text}</button>
