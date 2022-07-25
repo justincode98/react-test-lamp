@@ -1,8 +1,9 @@
 import React from 'react';
 import NavBar from "../NavBar";
-function Header() {
+function Header(props) {
+    console.log("at header state is " + props.state)
     return (
-        <NavBar></NavBar>
+        <NavBar state={props.state} setState={props.setState}></NavBar>
     )
 }
 
